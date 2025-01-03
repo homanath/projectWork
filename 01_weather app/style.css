@@ -1,0 +1,128 @@
+/* General reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+}
+
+/* Body styling */
+body {
+    background: #222; /* Dark background color for the body */
+}
+
+/* Card container styling */
+.card {
+    width: 905px; /* Set width for card */
+    max-width: 470px; /* Limit max width */
+    background: linear-gradient(135deg, #00feda, #5b548a); /* Gradient background */
+    color: #fff; /* White text color */
+    margin: 100px auto 0; /* Center card horizontally and add top margin */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px 35px; /* Padding inside the card */
+    text-align: center; /* Center content inside the card */
+}
+
+/* Search input and button container */
+.search {
+    width: 100%; /* Make search container take full width */
+    display: flex; /* Use flexbox to align children horizontally */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out input and button */
+}
+
+/* Search input box styling */
+.search input {
+    border: 0; /* Remove border */
+    outline: 0; /* Remove outline */
+    background: #ebfffc; /* Light cyan background */
+    color: #555; /* Dark gray text color */
+    padding: 10px 25px; /* Padding inside the input box */
+    height: 60px; /* Set height */
+    border-radius: 30px; /* Rounded corners */
+    flex: 1; /* Make input take available space */
+    margin-right: 16px; /* Space between input and button */
+    font-size: 18px; /* Increase font size */
+}
+
+/* Search button styling */
+.search button {
+    background: none; /* No background */
+    border: none; /* No border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor on hover */
+    display: flex; /* Center image inside button */
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    border-radius: 50%; /* Round button */
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+}
+
+/* Button image styling */
+.search button img {
+    width: 24px; /* Set width of image */
+    height: 24px; /* Set height of image */
+    object-fit: contain; /* Make sure the image fits inside button */
+}
+
+/* Weather icon styling */
+.weather-icon {
+    width: 170px; /* Set size of weather icon */
+    margin-top: 30px; /* Space above icon */
+}
+
+/* Temperature text styling */
+.weather h1 {
+    font-size: 80px; /* Large font size */
+    font-weight: 500; /* Medium weight */
+}
+
+/* City name styling */
+.weather h2 {
+    font-size: 45px; /* Smaller font size for city name */
+    font-weight: 400; /* Regular font weight */
+    margin-top: -10px; /* Adjust position */
+}
+
+/* Details section styling */
+.details {
+    display: flex; /* Use flexbox to layout columns */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space out details */
+    padding: 0 20px; /* Padding on sides */
+    margin-top: 50px; /* Space above details */
+}
+
+/* Each column inside details */
+.col {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Left align text */
+}
+
+/* Icon styling for humidity and wind */
+.col img {
+    width: 40px; /* Set icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Humidity and wind text styling */
+.humidity, .wind {
+    font-size: 28px; /* Font size for humidity and wind values */
+    margin-top: -6px; /* Adjust position */
+}
+
+/* Weather details section, hidden by default */
+.weather {
+    display: none; /* Hide weather section initially */
+}
+
+/* Error message section, hidden by default */
+.error {
+    text-align: left; /* Left align error message */
+    margin-left: 10px; /* Space from left edge */
+    font-size: 14px; /* Small font size for error message */
+    margin-top: 10px; /* Space above error message */
+    display: none; /* Hide error message by default */
+}
