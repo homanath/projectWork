@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Defines character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures responsive design on mobile devices -->
+    <title>To-Do List</title> <!-- Title of the webpage displayed on the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Links the external CSS file to style the webpage -->
+</head>
+
+<body>
+    <div class="container"> <!-- Main container div for centering the content -->
+        <div class="todo-app"> <!-- Wrapper for the todo app content -->
+            <h2>
+                To Do List <img src="images/icon.png"> <!-- Title of the to-do list with an icon -->
+            </h2>
+            <div class="row"> <!-- Row containing input box and button -->
+                <input type="text" id="input-box" placeholder="Add your Text"> <!-- Input box for adding new tasks -->
+                <button onclick="addTask()">Add</button> <!-- Button to trigger the addTask function -->
+            </div>
+            <ul id="list-container"> <!-- Unordered list for displaying tasks -->
+                <!-- Example tasks can be added here, like:
+                <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+                -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Links the external JavaScript file to handle functionality -->
+</body>
+
+</html>
