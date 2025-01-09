@@ -1,0 +1,175 @@
+/* Body background with a gradient */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #81c784, #4caf50); /* Green gradient background */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container for the test area */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+/* Title and subtitle styling */
+h1 {
+  color: #00796b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Settings area (language selection and buttons) */
+.settings {
+  margin-bottom: 30px;
+}
+
+select, button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Language selector and button background */
+select {
+  background-color: #ffffff;
+  border: 2px solid #00796b;
+  color: #00796b;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* Test Area styling */
+#testArea {
+  display: none;
+  margin-top: 20px;
+}
+
+#codeSnippet {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  color: #00796b;
+  white-space: pre-wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #f1f8e9;
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #004d40;
+}
+
+/* Stats Section (Time left, words, and accuracy) */
+.stats {
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.stats p {
+  font-weight: bold;
+}
+
+.stats span {
+  font-weight: normal;
+  color: #00796b;
+}
+
+/* Timer styling */
+#timeLeft {
+  color: #d32f2f; /* Red for countdown */
+}
+
+/* Result Section styling */
+#result {
+  display: none;
+}
+
+#result h2 {
+  color: #00796b;
+  font-size: 1.5rem;
+}
+
+#result p {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+#retryBtn {
+  background-color: #d32f2f;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#retryBtn:hover {
+  background-color: #c2185b;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  #codeSnippet {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+    height: 120px;
+  }
+}

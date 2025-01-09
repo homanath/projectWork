@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coder Typing Speed Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Coder Typing Speed Test</h1>
+    <div class="settings">
+      <label for="language">Select Language:</label>
+      <select id="language">
+        <option value="C">C</option>
+        <option value="CSharp">C#</option>
+        <option value="Python">Python</option>
+      </select>
+      <label for="duration">Select Duration:</label>
+      <select id="duration">
+        <option value="30">30 seconds</option>
+        <option value="60">1 minute</option>
+        <option value="120">2 minutes</option>
+      </select>
+      <button id="startBtn">Start Test</button>
+    </div>
+    <div id="testArea" class="hidden">
+      <div id="codeSnippet"></div>
+      <textarea id="inputBox" placeholder="Start typing the code here..." disabled></textarea>
+      <div class="stats">
+        <p>Time Left: <span id="timeLeft">0</span>s</p>
+        <p>Words Typed: <span id="wordsTyped">0</span></p>
+        <p>Accuracy: <span id="accuracy">0</span>%</p>
+      </div>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Results</h2>
+      <p>WPM: <span id="wpm">0</span></p>
+      <p>Accuracy: <span id="finalAccuracy">0</span>%</p>
+      <button id="retryBtn">Retry</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
