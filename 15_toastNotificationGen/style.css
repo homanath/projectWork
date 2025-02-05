@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #f7edff;
+}
+.buttons {
+    margin: 50px;
+}
+.buttons button {
+    background: #333;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+#toastBox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+.toast {
+    background: #fff;
+    width: 400px;
+    margin: 15px 0;
+    height: 80px;
+    font-weight: 500;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(100%);
+    animation: move 0.5s linear forwards;
+}
+@keyframes move {
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* 🔹 Fix: Apply the correct colors */
+.toast i {
+    margin: 0 20px;
+    font-size: 35px;
+}
+
+/* ✅ Success (Green) */
+.toast.success i {
+    color: green !important;
+}
+.toast.success::after {
+    background: green !important;
+}
+
+/* ❌ Error (Red) */
+.toast.error i {
+    color: red !important;
+}
+.toast.error::after {
+    background: red !important;
+}
+
+/* ⚠ Invalid (Orange) */
+.toast.invalid i {
+    color: orange !important;
+}
+.toast.invalid::after {
+    background: orange !important;
+}
+
+/* 🔹 Bottom animation bar */
+.toast::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    animation: anim 5s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        width: 0; 
+    }
+}
